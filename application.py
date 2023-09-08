@@ -7,8 +7,8 @@ import logging
 import pymongo
 logging.basicConfig(filename="scrapper.log" , level=logging.INFO)
 
-app = Flask(__name__)
-
+application = Flask(__name__)
+application = app
 @app.route("/", methods = ['GET'])
 @cross_origin()
 def homepage():
